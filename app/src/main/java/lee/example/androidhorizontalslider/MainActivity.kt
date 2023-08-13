@@ -17,6 +17,6 @@ class MainActivity : AppCompatActivity() {
         findViewById<MiddleSlider>(R.id.slider_middle).value = 69f
 
         findViewById<MiddleSlider>(R.id.slider_middle_negative).valueActiveFixed = 0f
-        findViewById<MiddleSlider>(R.id.slider_middle_negative).valueActiveFixed = -69f
+        findViewById<MiddleSlider>(R.id.slider_middle_negative).value = -69f
     }
 }
