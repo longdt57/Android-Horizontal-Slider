@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package lee.module.slider;
+package lee.module.slider.vertical;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -26,8 +26,9 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 import com.google.android.material.R;
-import com.google.android.material.slider.BaseOnChangeListener;
-import com.google.android.material.slider.BaseOnSliderTouchListener;
+
+import lee.module.slider.material.BaseOnChangeListener;
+import lee.module.slider.material.BaseOnSliderTouchListener;
 
 /**
  * A widget that allows picking a value within a given range by sliding a thumb along a horizontal
@@ -40,35 +41,35 @@ import com.google.android.material.slider.BaseOnSliderTouchListener;
  *
  * @attr ref com.google.android.material.R.styleable#SingleSlider_android_value
  */
-public class HorizontalSlider extends BaseHorizontalSlider<HorizontalSlider, HorizontalSlider.OnChangeListener, HorizontalSlider.OnSliderTouchListener> {
+public class VerticalSlider extends BaseVerticalSlider<VerticalSlider, VerticalSlider.OnChangeListener, VerticalSlider.OnSliderTouchListener> {
 
   /** Interface definition for a callback invoked when a slider's value is changed. */
-  public interface OnChangeListener extends BaseOnChangeListener<HorizontalSlider> {
+  public interface OnChangeListener extends BaseOnChangeListener<VerticalSlider> {
     @Override
-    void onValueChange(@NonNull HorizontalSlider slider, float value, boolean fromUser);
+    void onValueChange(@NonNull VerticalSlider slider, float value, boolean fromUser);
   }
 
   /**
    * Interface definition for callbacks invoked when a slider's touch event is being
    * started/stopped.
    */
-  public interface OnSliderTouchListener extends BaseOnSliderTouchListener<HorizontalSlider> {
+  public interface OnSliderTouchListener extends BaseOnSliderTouchListener<VerticalSlider> {
     @Override
-    void onStartTrackingTouch(@NonNull HorizontalSlider slider);
+    void onStartTrackingTouch(@NonNull VerticalSlider slider);
 
     @Override
-    void onStopTrackingTouch(@NonNull HorizontalSlider slider);
+    void onStopTrackingTouch(@NonNull VerticalSlider slider);
   }
 
-  public HorizontalSlider(@NonNull Context context) {
+  public VerticalSlider(@NonNull Context context) {
     this(context, null);
   }
 
-  public HorizontalSlider(@NonNull Context context, @Nullable AttributeSet attrs) {
+  public VerticalSlider(@NonNull Context context, @Nullable AttributeSet attrs) {
     this(context, attrs, R.attr.sliderStyle);
   }
 
-  public HorizontalSlider(@NonNull Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
+  public VerticalSlider(@NonNull Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
     super(context, attrs, defStyleAttr);
     TypedArray a = context.obtainStyledAttributes(attrs, new int[] {android.R.attr.value});
     if (a.hasValue(0)) {
