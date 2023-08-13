@@ -9,7 +9,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        findViewById<VerticalSlider>(R.id.slider_top).maxHeight = 1000
+        findViewById<VerticalSlider>(R.id.slider_top).maxHeight = 900
         findViewById<VerticalSlider>(R.id.slider_top).setUpsideDown(false)
     }
 }
