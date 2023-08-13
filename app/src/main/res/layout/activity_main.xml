@@ -5,18 +5,56 @@
     android:layout_height="match_parent"
     android:background="@android:color/darker_gray">
 
+    <TextView
+        android:id="@+id/tv_vertical_bottom_slider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Vertical Slider\n From Bottom"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <lee.module.slider.vertical.VerticalSlider
         android:id="@+id/slider"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="24dp"
         android:stepSize="1"
         android:value="24"
         android:valueFrom="0"
         android:valueTo="100"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/guide_middle_height"
+        app:layout_constraintEnd_toEndOf="@id/tv_vertical_bottom_slider"
+        app:layout_constraintStart_toStartOf="@id/tv_vertical_bottom_slider"
+        app:layout_constraintTop_toBottomOf="@id/tv_vertical_bottom_slider"
+        app:thumbColor="@color/black"
+        app:tickColor="@android:color/transparent"
+        app:trackColorActive="@android:color/black"
+        app:trackColorInactive="#66FFFFFF" />
+
+    <TextView
+        android:id="@+id/tv_vertical_slider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Vertical Slider\nMaxheight 1000"
+        android:textSize="18dp"
+        app:layout_constraintStart_toEndOf="@id/tv_vertical_bottom_slider"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <lee.module.slider.vertical.VerticalSlider
+        android:id="@+id/slider_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:stepSize="1"
+        android:value="24"
+        android:valueFrom="0"
+        android:valueTo="100"
+        app:layout_constraintEnd_toEndOf="@id/tv_vertical_slider"
+        app:layout_constraintStart_toStartOf="@id/tv_vertical_slider"
+        app:layout_constraintTop_toBottomOf="@id/tv_vertical_slider"
         app:thumbColor="@color/black"
         app:tickColor="@android:color/transparent"
         app:trackColorActive="@android:color/black"
