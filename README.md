@@ -5,7 +5,7 @@ These Sliders base on Material Library version 1.9.0
 ## ScreenShots
 | Vertical Slider | Horizontal Middle Slider |
 |-|-|
-| <img src="screenshots/screenshot_vertical_slider.png" width=300 /> | <video src="screenshots/screenshot_slider_middle_point.png" width=300 /> |
+| <img src="screenshots/screenshot_vertical_slider.png" width=300 /> | <img src="screenshots/screenshot_slider_middle_point.png" width=300 /> |
 
 ## Implementation
 
