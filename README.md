@@ -32,14 +32,19 @@ dependencies {
     android:id="@+id/slider"
     android:layout_width="wrap_content"
     android:layout_height="300dp"
-    android:stepSize="1"
-    android:value="50"
-    android:valueFrom="0"
-    android:valueTo="100"
-    app:thumbColor="@color/black"
-    app:tickColor="@android:color/transparent"
-    app:trackColorActive="@android:color/black"
-    app:trackColorInactive="#66FFFFFF" />
+    ...
+    />
 ```
 - Set maxHeight by: verticalSlider.maxHeight = 1000
 - Set upSideDown: setUpsideDown(true)
+
+### 2. MiddleSlider
+```
+<lee.module.slider.middle.MiddleSlider
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:value="0"
+    android:valueFrom="-100"
+    android:valueTo="100" />
+```
+- Set middle point: slider.valueActiveFixed = 0f
