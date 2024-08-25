@@ -1,5 +1,5 @@
 # Android-Horizontal-Slider
-[![Version](https://jitpack.io/v/longdt57/Android-Vertical-Slider.svg)](https://github.com/longdt57/Android-Vertical-Slider/releases)
+[![Version](https://jitpack.io/v/longdt57/Android-Vertical-Slider.svg)](https://github.com/longdt57/Android-Material-Slider/releases)
 These Sliders base on Material Library version 1.9.0
 
 ## ScreenShots
@@ -21,7 +21,7 @@ repositories {
 ```
 
 dependencies {
-  implementation 'com.github.longdt57:Android-Vertical-Slider:{version}'
+  implementation 'com.github.longdt57:Android-Material-Slider:{version}'
 }
 ```
 
